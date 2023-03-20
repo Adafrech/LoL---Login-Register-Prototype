@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --whitesmoke: #F9F9F9;
+  --light-grey: #ECECEC;
+  --grey: #C4C4C4;
+  --medium-grey: #A7A7A7;
+  --deep-grey: #343434;
+  --black: #000000;
+  --blue: #1877f3;
+  --red: #0051ff;
+  --blue-black: hsl(202, 100%, 50%);
+  --light-blue: #00ffff;
+}
+
+main {
+  width: 100%;
+  background-image: url('LogIm/atardecer-en-las-nubes_7087x4724_xtrafondos.com.jpg');
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  display: flex;
+}
+
+.Register {
+  background-color: whitesmoke;
+
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  padding: clamp(35px, 8%, 70px);
+  margin: 0 auto;
+
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+
+.Register_Logo {
+  width: 130px;
+  margin-bottom: 80px;
+
+}
+
+
+.Register_Title {
+  color: var(--deep-grey);
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.Register_label {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  background-color: var(--light-grey);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9em;
+  padding: 25px 10px 10px;
+  font-weight: 600;
+  color: var(--deep-grey);
+}
+
+.Register_label span {
+  width: 100%;
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--medium-grey);
+  margin: 20px;
+  cursor: text;
+  transition: all 200ms ease;
+}
+
+.input:focus {
+  background-color: var(--whitesmoke);
+  border: 2px solid var(--deep-grey);
+}
+
+.Register_label .span-active {
+  font-size: 0, 7em;
+  margin: 8px 10px;
+}
+
+/*.wallpaper{
+  width: 100%;
+  background-image: url('LogIm/atardecer-en-las-nubes_7087x4724_xtrafondos.com.jpg');
+  background-size: cover;
+  background-position: center;  
+  flex: 1;
+  
+}
+*/
+
+.Register__button {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-black);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.Register__button svg {
+  fill: white;
+}
+
+.Register__button:disabled {
+  cursor: auto;
+  background-color: white;
+  border: 2px solid var(--light-grey);
+}
+
+.Register__button:disabled {
+  fill: var(grey);
+}
+
+.warnings
+{
+    width:200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
